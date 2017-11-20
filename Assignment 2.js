@@ -22,3 +22,8 @@ to convert it to 0.02.
 • nbYear(1500000, 0.25, 1000, 2000000) ->94
 */
 
+/*
+	Made by A.J. Joris Lodewijks for the Creative Apps course 2017/2018
+*/
+
+var p0
