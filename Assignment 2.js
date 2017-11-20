@@ -26,4 +26,30 @@ to convert it to 0.02.
 	Made by A.J. Joris Lodewijks for the Creative Apps course 2017/2018
 */
 
-var p0
+var p0 = 1500000;
+var percent = 2.5;
+var aug = 10000;
+
+var p = 2000000;
+
+var year = 1;
+
+function simulateYear (currentPopulation, percent, aug) {
+	var factor = percent / 100 + 1;
+
+	var currentPopulation = currentPopulation * factor + aug;
+
+	return currentPopulation;
+}
+
+function simulateTownPopulation (p0, percent, aug, p) {
+	var currentPopulation = p0;
+	while (currentPopulation < p) {
+		currentPopulation = simulateYear(currentPopulation, percent, aug);
+		year += 1;
+	}
+
+	console.log("Duration of the simulation " + (year - 1) + " years");
+}
+
+simulateTownPopulation(p0, percent, aug, p);

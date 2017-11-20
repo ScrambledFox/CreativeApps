@@ -11,12 +11,12 @@ lowest element (the value, not the index!).
 	Made by A.J. Joris Lodewijks for the Creative Apps course 2017/2018
 */
 
-var input = [6,8,9,2,3,1,5];
+var numbers = [5, 6, 1, 11];
 
 function SumArray (input) {
 	if (typeof input[0] == "number") {
-		var lowestNumberIndex = input[0];
-		var highestNumberIndex = input[0];
+		var lowestNumberIndex = 0;
+		var highestNumberIndex = 0;
 
 		for (var i = 0; i < input.length; i++) {
 			if (input[i] < input[lowestNumberIndex]) {
@@ -27,6 +27,9 @@ function SumArray (input) {
 			}
 		}
 
+		console.log(lowestNumberIndex + " with a value of " + input[lowestNumberIndex] );
+		console.log(highestNumberIndex + " with a value of " + input[highestNumberIndex]);
+
 		var result = 0;
 		for (var i = 0; i < input.length; i++) {
 			if (i != lowestNumberIndex && i != highestNumberIndex) {
@@ -34,13 +37,11 @@ function SumArray (input) {
 			}
 		}
 
-		
 		return result;
 
 	} else{
 		console.log("The input array is not set-up correctly, please check that the array only contains numbers!");
-		return null;
 	}
 }
 
-console.log(SumArray(input));
+console.log(SumArray(numbers));
