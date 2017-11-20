@@ -7,6 +7,10 @@ lowest element (the value, not the index!).
 • { 1, 1, 11, 2, 3 } => 6
 */
 
+/*
+	Made by A.J. Joris Lodewijks for the Creative Apps course 2017/2018
+*/
+
 var input = [6,8,9,2,3,1,5];
 
 function SumArray (input) {
