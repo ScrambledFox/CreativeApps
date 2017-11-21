@@ -5,7 +5,7 @@ containing strings which form a box.
 • Test with n=3:
 */
 
-var n = 5;
+var n = 100;
 
 function drawTopBottomLines (n) {
 	var string = "";

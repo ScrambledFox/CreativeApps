@@ -23,7 +23,7 @@ to convert it to 0.02.
 */
 
 /*
-	Made by A.J. Joris Lodewijks for the Creative Apps course 2017/2018
+	Made by A.J. Joris Lodewijks and Jochem de Greef for the Creative Apps course 2017/2018
 */
 
 var p0 = 1500000;
